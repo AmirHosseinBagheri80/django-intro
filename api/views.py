@@ -14,5 +14,5 @@ def kerman_weather(request):
     response.raise_for_status()
     info=response.json()
     temperature= info['current_condition'][0]['temp_C']
-    return HttpResponse("weather informain collected:"+str(temperature))
+    return HttpResponse("weather informain collected:"+str(temperature)+"^C")
     
